@@ -293,7 +293,7 @@ blender.prepare(final_corners, final_sizes)
 for img, mask, corner in zip(compensated_imgs, seam_masks, final_corners):
     blender.feed(img, mask, corner)
 panorama, _ = blender.blend()
-cv2.imwrite('output.png', panorama)
+cv2.imwrite('output.jpg', panorama)
 # plot_image(panorama, (20,20))
 
 
