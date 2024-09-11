@@ -15,8 +15,6 @@ from stitching.blender import Blender
 import os
 import glob
 from skimage.measure import shannon_entropy
-
-from pybrisque import BRISQUE
 import cv2
 
 
@@ -304,9 +302,7 @@ cv2.imwrite('output.png', panorama)
 entropy_value = shannon_entropy(panorama)
 print(f"Entropy: {entropy_value}")
 
-gray_img = cv2.cvtColor(panorama, cv2.COLOR_BGR2GRAY)
-score = BRISQUE().score(gray_img)
-print(f"BRISQUE Score: {score}")
+
 
 
 # if __name__ =='__main__':
