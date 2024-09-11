@@ -10,6 +10,17 @@ Creating panoramas using computer vision is a well-established technique, yet mo
 
 In this project, we approach stitching as a multi-image matching problem. By leveraging invariant local features,it finds matches between images with robustness to variations in ordering, orientation, scale, and illumination. This approach ensures that the stitching process is less sensitive to these factors, leading to more accurate and seamless panoramic images.
 
+## Results
+Evaluating the performance of an image stitching algorithm, especially when no ground truth is available is very challenging. However, you can use several metrics to assess different aspects of the quality of the stitched panorama like 
+*Entropy 
+*SSIM (structual similarity index)
+*Seam line quality
+
+Entropy measures the amount of information in the image. Higher entropy often indicates more details, contrast, and texture
+I have used Entropy to evaluate the image which was arround 7.5
+
+![sample frame ](/home/madmax/stitching/image_stitching/output.png)
+
 ## Reference :
 SIFT - Research on Image Matching of Improved SIFT Algorithm
 Based on Stability Factor and Feature Descriptor Simplification (Liang Tang, Shuhua Ma , Xianchun Ma
