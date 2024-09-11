@@ -19,7 +19,7 @@ Evaluating the performance of an image stitching algorithm, especially when no g
 Entropy measures the amount of information in the image. Higher entropy often indicates more details, contrast, and texture
 I have used Entropy to evaluate the image which was arround 7.5
 
-![Final Image](/image_stitching/output.png)
+![Final Image](image_stitching/output.png)
 
 ## Reference :
 SIFT - Research on Image Matching of Improved SIFT Algorithm
